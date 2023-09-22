@@ -26,7 +26,7 @@
     display: flex;
     justify-content: center;
     flex-direction: row;
-    margin-bottom: 50px;
+    margin-bottom: 30px;
 }
 
 .contact-block-text-item{
@@ -52,6 +52,86 @@
     color: var(--var-hovercolor);
 }
 
+
+
+/* FORM */
+
+.form{
+    width: 70%;
+    margin: 0 auto;
+}
+
+.form-title{
+    font-size: 19px;
+    font-weight: 700;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.form-holder{
+    width: 100%;
+    margin: 0 auto;
+}
+
+input, textarea{
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #6d6d6d18;
+    box-sizing: border-box;
+    resize: none;
+    color: var(--var-fontcolor);
+    background-color: var(--var-bgcolor);
+    font-size: 12px;
+    font-weight: 400;
+    letter-spacing: 0.2em;
+    outline:none;
+    margin-bottom: 5px;
+}
+
+input{
+    height: 50px;
+}
+
+textarea{
+    height: 100px;
+}
+
+:focus::-webkit-input-placeholder {
+    color: transparent
+}
+  
+:focus::-moz-placeholder {
+    color: transparent
+}
+  
+:focus:-moz-placeholder {
+    color: transparent
+}
+  
+:focus:-ms-input-placeholder {
+    color: transparent
+}
+
+input[type="date"]::-webkit-calendar-picker-indicator {
+    cursor: pointer;
+    background-image: url('../images/calendar-icon.png');
+}
+
+.form-btn{
+    width: 100%;
+    height: 50px;
+    color: var(--var-bgcolor);
+    border: 0;
+    box-shadow: 0px 2px 8px 0px var(--var-shadowcolor);
+    background-color: var(--var-fontcolor);
+    font-size: 18px;
+    font-weight: 600;
+    letter-spacing: 0.2em;
+}
+
+.form-btn:hover{
+    opacity: 0.7;
+}
 
 /* SOCIALS */
 
@@ -92,15 +172,34 @@
 
 @media screen and (max-width: 1440px) {
     .contacs-data,
-    .contacs-socials-header{
+    .contacs-socials-header,
+    .form-title{
         font-size: 17px;
+    }
+
+    input, textarea{
+        font-size: 10px;
+    }
+
+    input{
+        height: 45px;
+    }
+
+    textarea{
+        height: 90px;
+    }
+
+    .form-btn{
+        font-size: 18px;
+        height: 45px;
     }
 }
 
 @media screen and (max-width: 1199px) {
     
     .contacs-data,
-    .contacs-socials-header{
+    .contacs-socials-header,
+    .form-title{
         font-size: 15px;
     }
 
@@ -114,6 +213,19 @@
 
     .contacs-socials-btns{
         width: 50%;
+    }
+
+    input{
+        height: 30px;
+    }
+
+    textarea{
+        height: 60px;
+    }
+
+    .form-btn{
+        font-size: 16px;
+        height: 30px;
     }
 }
 
@@ -138,8 +250,29 @@
     }
 
     .contacs-data,
-    .contacs-socials-header{
+    .contacs-socials-header,
+    .form-title{
         font-size: 19px;
+    }
+
+    .form{
+        width: 100%;
+        margin-top: 30px;
+    }
+
+    input{
+        font-size: 14px;
+        height: 50px;
+    }
+
+    textarea{
+        font-size: 14px;
+        height: 100px;
+    }
+
+    .form-btn{
+        font-size: 18px;
+        height: 50px;
     }
 }
 
@@ -151,19 +284,29 @@
 
 @media screen and (max-width: 575px) {
     .contacs-data,
-    .contacs-socials-header{
+    .contacs-socials-header,
+    .form-title{
         font-size: 16px;
     }
     
     .contact-block-avatar{
         margin-bottom: 15px;
     }
+
+    input, textarea{
+        font-size: 12px;
+    }
+
+    .form-btn{
+        font-size: 16px;
+    }
 }
 
 
 @media screen and (max-width: 374px) {
     .contacs-data,
-    .contacs-socials-header{
+    .contacs-socials-header,
+    .form-title{
         font-size: 15px;
     }
 
@@ -173,6 +316,14 @@
 
     .contact-block-text{
         width: 90%;
+    }
+
+    input, textarea{
+        font-size: 10px;
+    }
+
+    .form-btn{
+        font-size: 14px;
     }
 }
 

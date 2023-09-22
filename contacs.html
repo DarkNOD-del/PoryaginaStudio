@@ -98,31 +98,22 @@
                             </div>
                         </div>
 
-                        <!-- <div class="contact-block-text-holder">
+                        <div class="contact-block-text-holder">
+                            <form action="php/telegram.php" method="POST" class="form">
+                                
+                                <div class="form-title">Или напишите мне:</div>
 
-                            <div class="contact-block-text-item">
-                                <div class="contacs-data">
-                                    <span>Телефон:</span> <a href="tel:+79513925449">+7-951-392-54-49</a>
+                                <div class="form-holder">
+                                    <input type="text" placeholder="Имя *" name="user_name" required>
+                                    <input type="email" placeholder="E-mail *" name="user_email" required>
+                                    <input type="text" placeholder="Номер телефона *" maxlength="18" name="user_phone" required>
+                                    <input type="date" placeholder="Дата" name="user_event_date">
+                                    <textarea placeholder="Примечание" name="user_note"></textarea>
                                 </div>
-                                <div class="contacs-data">
-                                    <span>Почта:</span> <a href="mailto:ulanaporagina@gmail.com">ulanaporagina@gmail.com</a>
-                                </div>
-                                <div class="contacs-data">
-                                    <span>Адрес:</span> Россия, Новосибирск
-                                </div>
-                            </div>
-
-                            <div class="contact-block-text-item">
-                                <div class="contacs-socials">
-                                    <div class="contacs-socials-header">Социальные сети:</div>
-                                    <div class="contacs-socials-btns">
-                                        <a href="https://vk.com/ulianach3112" class="fa contacs-btn fa-vk" target="_blank"></a>
-                                        <a href="https://instagram.com/ullixxineee" class="fa contacs-btn fa-instagram" target="_blank"></a>
-                                        <a href="https://web.whatsapp.com/send?phone=79130192734" class="fa contacs-btn fa-whatsapp" target="_blank"></a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div> -->
+                                
+                                <button type="submit" class="form-btn">ОТПРАВИТЬ</button>
+                            </form>
+                        </div>
                     </div>       
                 </div>
             </div>
@@ -161,7 +152,9 @@
 
 
     <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
-    
     <script src="js/general.js"></script>
+
+
+
 </body>
 </html>
