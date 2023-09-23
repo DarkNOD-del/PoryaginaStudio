@@ -19,6 +19,13 @@
     box-shadow: 0px 2px 8px 0px var(--var-shadowcolor);
 }
 
+.gallery-img.lazy{
+    background-image: url("../images/loading.gif");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 30% 30%; 
+}
+
 
 
 /* Adaptive */
