@@ -81,6 +81,5 @@ for (let burger_btn of burger_btns){
     burger_btn.addEventListener("click", function(event) {
         document.querySelector(".burger-menu").classList.toggle("change");
         document.getElementById("burger-overlay").style.height = "0%";
-        document.querySelector("body").style.overflow = "auto"
     });
 }

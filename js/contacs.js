@@ -38,7 +38,6 @@ document.addEventListener('DOMContentLoaded', function () {
 
             form.classList.remove('_sending');
             modal.style.display = "block";
-            document.querySelector("body").style.overflow = "hidden";
         }
     }
 
@@ -121,6 +120,5 @@ document.addEventListener('DOMContentLoaded', function () {
 
     modal_close.onclick = function() {
         modal.style.display = "none";
-        document.querySelector("body").style.overflow = "auto";
     }
 });
