@@ -6,7 +6,7 @@ $event_date = $_POST['user_event_date'];
 $note = $_POST['user_note'];
 
 $token = "6207474555:AAEPOd7oSn4GP_L_LetqRNXBWlf-DXe3xMY";
-$chat_id = "-4043516578";
+$chat_id = "-1001853940603";
 $arr = array(
   'Имя пользователя: ' => $name,
   'Email: ' => $email,
@@ -24,9 +24,14 @@ foreach($arr as $key => $value) {
 $sendToTelegram = fopen("https://api.telegram.org/bot{$token}/sendMessage?chat_id={$chat_id}&parse_mode=html&text={$txt}","r");
 
 if ($sendToTelegram) {
-  echo "Сообщение успешно отправлено. Ожидайте звонка :-)";
+  $message = "Сообщение успешно отправлено. Ожидайте звонка :-)";
 } 
 else {
-  echo "Не удалось отправить сообщение. Попробуйте другой способ связаться со мной.";
+  $message = "Не удалось отправить сообщение... Попробуйте позже";
 }
+
+$response = ['message' => $message];
+
+header('Content-type: application/json');
+echo json_encode($response);
 ?>

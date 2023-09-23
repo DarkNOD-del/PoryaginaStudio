@@ -46,14 +46,14 @@ $(window).scroll(function()
     {
         header.css({
             'padding': '5px 0',
-            'transition': '.3s'
+            'transition': '.5s'
         });
     } 
     else 
     {
         header.css({
             'padding': '15px 0',
-            'transition': '.3s'
+            'transition': '.5s'
         });
     }
 });

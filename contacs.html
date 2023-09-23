@@ -99,14 +99,17 @@
                         </div>
 
                         <div class="contact-block-text-holder">
-                            <form action="php/telegram.php" method="POST" class="form">
+                            <form action="#" method="POST" class="form" id="form">
                                 
                                 <div class="form-title">Или напишите мне:</div>
 
                                 <div class="form-holder">
-                                    <input type="text" placeholder="Имя *" name="user_name" required>
-                                    <input type="email" placeholder="E-mail *" name="user_email" required>
-                                    <input type="text" placeholder="Номер телефона *" maxlength="18" name="user_phone" required>
+                                    <input type="text" class="_req _name" placeholder="Имя *" maxlength="50" name="user_name">
+                                    <div class="error_popup">* имя может содержать только русские и английские буквы!</div>
+                                    <input type="text" class="_req _email" placeholder="E-mail *" maxlength="30" name="user_email">
+                                    <div class="error_popup">* неправильный формат e-mail (пример: test@info.com)</div>
+                                    <input type="text" class="_req _phonenumber" placeholder="Номер телефона *" maxlength="18" name="user_phone">
+                                    <div class="error_popup">* неправильный формат телефона (пример: +7 *** *** ** **)</div>
                                     <input type="text" placeholder="Дата" name="user_event_date">
                                     <textarea placeholder="Примечание" name="user_note"></textarea>
                                 </div>
@@ -152,7 +155,9 @@
 
 
     <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+    
     <script src="js/general.js"></script>
+    <script src="js/contacs.js"></script>
 
 
 
