@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    
+    <link rel="shortcut icon" href="images/logo.png">
+    <meta name="description" content="Я сохраняю в своих снимках настроение праздника, с его красотой, драйвом, эмоциями и нежностью, считая, что настоящее счастье должно существовать вне времени.">
+    <meta property="og:locale" content="ru_RU" />
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="Ульяна Порягина - портретный и свадебный фотограф в Новосибирске" />
+    <meta property="og:description" content="Я сохраняю в своих снимках настроение праздника, с его красотой, драйвом, эмоциями и нежностью, считая, что настоящее счастье должно существовать вне времени." />
+    <meta property="og:site_name" content="ПорягинаСтудия" />
+    <meta property="og:image" content="images/og-img.jpg" />
+    <meta property="og:image:width" content="1200" />
+    <meta property="og:image:height" content="630" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Didact+Gothic&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="plugins/animate.css">
+
+    <link rel="stylesheet" href="css/variables.css">
+    <link rel="stylesheet" href="css/general.css">
+    <link rel="stylesheet" href="css/prices.css">
+
+    <title>ПорягинаСтудия - Прайс</title>
+</head>
+<body>
+
+
+
+    <div class="header-line">
+        <div class="header-logo">
+            <a href="index.html" class="company-name">УЛЬЯНА ПОРЯГИНА</a>
+        </div>
+
+        <nav class="header-nav">
+            <a href="index.html" class="nav-item">Главная</a>
+            <div class="nav-item-dot">•</div>
+            <a href="portfolio.html" class="nav-item">Портфолио</a>
+            <div class="nav-item-dot">•</div>
+            <a href="prices.html" class="active-tab">Прайс</a>
+            <div class="nav-item-dot">•</div>
+            <a href="contacs.html" class="nav-item">Контакты</a>
+            <div class="nav-item-dot">•</div>
+            <img src="images/moon.png" class="theme-icon-header" id="theme-icon-header" data-sun="images/sun.png" data-moon="images/moon.png">
+        </nav>
+
+        <div class="burger-menu" onclick="burgerClick(this)">
+            <div class="burger-menu-line bar1"></div>
+            <div class="burger-menu-line bar2"></div>
+            <div class="burger-menu-line bar3"></div>
+        </div>
+    </div>
+
+
+
+    <div class="prices">
+        <div class="container">
+            
+            <div class="section-header">
+                <span>
+                    ПРАЙС
+                </span>
+            </div>
+
+            <div class="price-holder">
+
+                <div class="price-card wow fadeIn">
+                    <div class="price-card-header">ПРОГУЛОЧНАЯ ФОТОСЕССИЯ</div>
+                    <div class="price-card-subtitle">до 5 часов</div>
+
+                    <img class="price-card-image" src="images/price-imgs/1.jpg">
+                    
+                    <div class="price-card-price">1 000 <span class="rub">Р</span></div>
+                    <div class="price-card-desc-header">Что входит?</div>
+                    <div class="price-card-desc-item">• Подбор локации</div>
+                    <div class="price-card-desc-item">• Подбор образа и реквизита</div>
+                    <div class="price-card-desc-item">• фотосъемка до 5 часов</div>
+                    <div class="price-card-desc-item">• Помощь в позировании</div>
+                    <div class="price-card-desc-item">• Обработка в течении 7 дней</div>
+                </div>
+
+                <div class="price-card wow fadeIn">
+                    <div class="price-card-header">ПАРНАЯ ФОТОСЕССИЯ</div>
+                    <div class="price-card-subtitle">все часы</div>
+
+                    <img class="price-card-image" src="images/price-imgs/2.jpg">
+                    
+                    <div class="price-card-price"><span class="price-card-price-place">Студия:</span> 1 200 <span class="rub">Р</span></div>
+                    <div class="price-card-price"><span class="price-card-price-place">Прогулочная:</span> 1 000 <span class="rub">Р</span></div>
+                    <div class="price-card-desc-header">Что входит?</div>
+                    <div class="price-card-desc-item">• Подбор локации</div>
+                    <div class="price-card-desc-item">• Подбор образа и реквизита</div>
+                    <div class="price-card-desc-item">• Фотосъемка без ограничения времени*</div>
+                    <div class="price-card-desc-item">• Помощь в позировании</div>
+                    <div class="price-card-desc-item">• Обработка в течении 7 дней</div>
+                    <div class="price-card-gift">
+                        <div class="price-card-gift-text">+ подарок:<br>скидка 10% при заказе от 5 часов</div>
+                    </div>
+                </div>
+
+                <div class="price-card wow fadeIn">
+                    <div class="price-card-header">ИНДИВИДУАЛЬНАЯ ФОТОСЕССИЯ</div>
+                    <div class="price-card-subtitle">все часы</div>
+
+                    <img class="price-card-image" src="images/price-imgs/3.jpg">
+
+                    <div class="price-card-price">1 200 <span class="rub">Р</span> / час</div>
+                    <div class="price-card-price-subtitle">(оплата студии отдельно)</div>
+                    <div class="price-card-desc-header">Что входит?</div>
+                    <div class="price-card-desc-item">• Подбор локации</div>
+                    <div class="price-card-desc-item">• Подбор образа и реквизита</div>
+                    <div class="price-card-desc-item">• Фотосъемка без ограничения времени*</div>
+                    <div class="price-card-desc-item">• Помощь в позировании</div>
+                    <div class="price-card-desc-item">• Обработка в течении 7 дней</div>
+                    <div class="price-card-gift">
+                        <div class="price-card-gift-text">+ подарок:<br>скидка 5% при заказе от 6 часов</div>
+                    </div>
+                </div>
+
+                <div class="price-card wow fadeIn">
+                    <div class="price-card-header">СВАДЕБНАЯ ФОТОСЕССИЯ</div>
+                    <div class="price-card-subtitle">все часы</div>
+
+                    <img class="price-card-image" src="images/price-imgs/4.jpg">
+                    
+                    <div class="price-card-price">3 000 <span class="rub">Р</span> / час</div>
+                    <div class="price-card-desc-header">Что входит?</div>
+                    <div class="price-card-desc-item">• Предварительные консультации</div>
+                    <div class="price-card-desc-item">• От 250 фото в обработке</div>
+                    <div class="price-card-desc-item">• Фотосъемка без ограничения времени*</div>
+                    <div class="price-card-desc-item">• Облачная галерея</div>
+                    <div class="price-card-desc-item">• Готовность в течении месяца</div>
+                    <div class="price-card-gift">
+                        <div class="price-card-gift-text">+ подарок:<br>скидка 5% при заказе от 6 часов</div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <div class="questions">
+        <div class="container">
+            <div class="questions-holder">
+                <div class="question wow jackInTheBox">
+                    <div class="question-title">А если мы боимся сниматься?</div>
+                    <div class="question-desc">В таком случае, вам отлично подходит мой стиль лайфстайл репортажа - вы просто остаетесь самими собой, пока я со стороны наблюдаю за происходящим<br><br>В тоже время, чтобы сделать кадры еще интереснее, я подсказываю при необходимости, но наша встреча не превращается в бесконечную фотосессию и главным отзывом о работе со мной остается "легко и комфортно"</div>
+                </div>
+
+                <div class="question wow jackInTheBox" data-wow-delay="0.1s">
+                    <div class="question-title">Что если камера сломается?</div>
+                    <div class="question-desc">"Всего по два". Это чуть ли не главное условие, связанное с техникой - у меня всегда с собой дублирующий комплект оборудования, от камер до карт памяти. Поэтому даже если один фотоаппарат съест ваш корги - я просто достану второй. Но корги лучше поругать</div>
+                </div>
+
+                <div class="question wow jackInTheBox">
+                    <div class="question-title">Вы работаете одна?</div>
+                    <div class="question-desc">В основном я снимаю одна, а на большие проекты или под особые задачи есть возможность привлекать ассистента или второго фотографа, условия такого хода выстраиваются в зависимости от задачи и обсуждаются индивидуально</div>
+                </div>
+
+                <div class="question wow jackInTheBox" data-wow-delay="0.1s">
+                    <div class="question-title">Каков порядок бронирования даты?</div>
+                    <div class="question-desc">Чтобы я стала вашим фотографом, нам нужно вместе пройти несколько этапов - устроить встречу-знакомство, выбрать дату, внести предоплату 50% от стоимости фотосессии</div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    
+    <footer>
+        <div class="footer-holder">
+            <div class="footer-mail">Напиши мне: <br><a href="mailto:ulanaporagina@gmail.com">ulanaporagina@gmail.com</a></div>
+            <div class="footer-text">© 2023 Ульяна Порягина - портретный и свадебный фотограф. Открыта к сотрудничеству и предложениям.</div>
+            <div class="footer-socials">
+                <div class="footer-socials-header">Мои соц. сети:</div>
+                <div class="footer-socials-btns">
+                    <a href="https://vk.com/ulianach3112" class="fa footer-btn fa-vk" target="_blank"></a>
+                    <a href="https://instagram.com/ullixxineee" class="fa footer-btn fa-instagram" target="_blank"></a>
+                    <a href="https://web.whatsapp.com/send?phone=79130192734" class="fa footer-btn fa-whatsapp" target="_blank"></a>
+                </div>
+            </div>
+        </div>
+    </footer>
+    
+
+
+    <div id="burger-overlay" class="burger-overlay">
+        <div class="overlay-content">
+            <a href="index.html" class="burger-menu-btn">• ГЛАВНАЯ •</a>
+            <a href="portfolio.html" class="burger-menu-btn">• ПОРТФОЛИО •</a>
+            <a href="prices.html" class="burger-active-tab">• ПРАЙС •</a>
+            <a href="contacs.html" class="burger-menu-btn">• КОНТАКТЫ •</a>
+            <img src="images/moon.png" class="theme-icon-burger" id="theme-icon-burger" data-sun="images/sun.png" data-moon="images/moon.png">
+        </div>
+    </div>
+
+
+
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+    <script src="plugins/wow.min.js"></script>
+
+    <script src="js/general.js"></script>
+</body>
+</html>
