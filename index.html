@@ -25,6 +25,7 @@
     <link rel="stylesheet" href="css/general.css">
     <link rel="stylesheet" href="css/index.css">
     <link rel="stylesheet" href="plugins/jquery.skidder.css">
+    <link rel="stylesheet" href="plugins/animate.css">
 
     <title>ПорягинаСтудия - Главная</title>
 </head>
@@ -59,12 +60,12 @@
             </div>
 
             <div class="header-content">
-                <div class="header-tagline">КАЧЕСТВО.</div>
-                <div class="header-tagline">СКОРОСТЬ.</div>
-                <div class="header-tagline">РЕЗУЛЬТАТ.</div>
-                <div class="header-subtitle">я раскрою ваши лучшие стороны</div>
+                <div class="header-tagline wow fadeInDown">КАЧЕСТВО.</div>
+                <div class="header-tagline wow fadeInDown" data-wow-delay="0.3s">СКОРОСТЬ.</div>
+                <div class="header-tagline wow fadeInDown" data-wow-delay="0.6s">РЕЗУЛЬТАТ.</div>
+                <div class="header-subtitle wow fadeInDown" data-wow-delay="0.9s">я раскрою ваши лучшие стороны</div>
 
-                <a class="header-start-btn" href="contacs.html">
+                <a class="header-start-btn wow fadeInDown" data-wow-delay="1.2s" href="contacs.html">
                     <span>ЗАПИСАТЬСЯ</span>
                 </a>
             </div>  
@@ -82,7 +83,7 @@
                 </span>
             </div>
 
-            <div class="slideshow">
+            <div class="slideshow wow fadeIn">
                 <div class="slide"><img src="images/gallery-imgs/1.jpg"></div>
                 <div class="slide"><img src="images/gallery-imgs/2.jpg"></div>
                 <div class="slide"><img src="images/gallery-imgs/3.jpg"></div>
@@ -93,7 +94,7 @@
             </div>
 
             <div class="favorite-shots-redirect">
-                <a href="gallery.html">посмотреть больше в Галереи</a> ►
+                <a href="gallery.html">посмотреть больше в Портфолио</a> ►
             </div>
 
         </div>
@@ -105,7 +106,7 @@
         <div class="container">
 
             <div class="about-holder">
-                <div class="about-item-text">
+                <div class="about-item-text wow fadeInUp">
                     <div class="about-header">ОБО МНЕ</div>
 
                     <div class="about-desc">
@@ -113,7 +114,7 @@
                     </div>
                 </div>
 
-                <div class="about-item-avatar">
+                <div class="about-item-avatar wow fadeInUp">
                     <div class="about-img">
                         <img class="about-avatar" src="images/about-avatar.jpg">
                     </div>
@@ -158,6 +159,7 @@
     <script src="plugins/jquery.skidder.js"></script>
     <script src="plugins/imagesloaded.js"></script>
     <script src="plugins/smartresize.js"></script>
+    <script src="plugins/wow.min.js"></script>
 
     <script src="js/general.js"></script>
     <script src="js/index.js"></script>

@@ -13,7 +13,7 @@
     --var-bgcolor: #1b1b1b;
     --var-fontcolor: white;
     --var-hovercolor: darkorange;
-    --var-shadowcolor: rgba(255, 255, 255, 0);
+    --var-shadowcolor: rgba(0, 0, 0, 0.2);
     --var-giftbg: #1b1b1b;
     --var-pricecardbg: #232323;
 }

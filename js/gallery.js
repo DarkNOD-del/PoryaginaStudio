@@ -7,7 +7,7 @@ jQuery(document).ready(function ($) {
         const sp = $(window).scrollTop() + hs;
 
         $('img.lazy').each( function (i, e) {
-            if (sp > $(e).offset().top) {
+            if (sp + 400 > $(e).offset().top) {
                 $(e).attr('src', $(e).data('src'));
                 $(e).removeClass('lazy');
             }

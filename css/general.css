@@ -42,6 +42,10 @@ a{
     border-bottom: var(--var-fontcolor) 2px solid;
 }
 
+.wow{
+    visibility: hidden;
+}
+
 
 
 /* HEADER */

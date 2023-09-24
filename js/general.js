@@ -83,3 +83,14 @@ for (let burger_btn of burger_btns){
         document.getElementById("burger-overlay").style.height = "0%";
     });
 }
+
+// Анимация при скроле
+
+wow = new WOW({
+    boxClass: 'wow',
+    animateClass: 'animated',
+    offset: 0,
+    mobile: true,
+    live: true
+})
+wow.init();
