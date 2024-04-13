@@ -1,7 +1,7 @@
 // Отправка формы
 
 document.addEventListener('DOMContentLoaded', function () {
-    const TOKEN = "6207474555:AAEPOd7oSn4GP_L_LetqRNXBWlf-DXe3xMY";
+    const TOKEN = "6988421157:AAFzZn4Ik70-zA-0rceCmnoTFUX8W8Atxfw";
     const CHAT_ID = "-1001853940603";
     let URI_API = `https://api.telegram.org/bot${TOKEN}/sendMessage`;
 
